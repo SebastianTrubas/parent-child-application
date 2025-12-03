@@ -1,13 +1,13 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
-import studentInfo from './student-info.vue';
-import HomePage from './home-page.vue'
+import StudentInfo from './student-info.vue';
+import HomePage from './home-page.vue';
 
 const routes = [
     {
         path: '/',
-        redirect: 'home-page'
+        redirect: '/home-page'
     },
     {
         path: '/home-page',
@@ -17,7 +17,7 @@ const routes = [
     {
         path: '/student-info/:id',
         name: 'student',
-        component: studentInfo
+        component: StudentInfo
     }
 ];
 
@@ -29,4 +29,5 @@ const router = createRouter({
 createApp(App)
     .use(router)
     .mount('#app');
+
 export default router;
