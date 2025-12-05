@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "voornaam": "Sebastian",
+    "achternaam": "Trubas",
+    "woonplaats": "Hoorn",
+    "geboortejaar": "2007",
+    "email": "sebastiantrubas@gmail.com",
+    "status": "unemployed",
+    "foto": "https://i.ytimg.com/vi/zvDpxQv1Oqk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBavsPg98opLgVXtlKRIitd0Grwrw"
+  },
+  {
+    "id": "2",
+    "voornaam": "Jesse",
+    "achternaam": "Veerman",
+    "woonplaats": "Hoorn",
+    "geboortejaar": "2006",
+    "email": "jesseveerman@gmail.com",
+    "status": "unemployed",
+    "foto": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8a7e/live/fb818410-a5dd-11f0-8fc6-8d89d06fa925.jpg"
+  },
+  {
+    "id": "3",
+    "voornaam": "Jace",
+    "achternaam": "Dillon",
+    "woonplaats": "Heerhugowaard",
+    "geboortejaar": "2006",
+    "email": "jacedillon@gmail.com",
+    "status": "employed",
+    "foto": "https://external-preview.redd.it/ibCY8jESBY8hntp5LlCY4_JLzIQl8h5R3IuyBZcPNeA.jpg?width=1080&crop=smart&auto=webp&s=6ec72bdf09cc466d3ba827800247a55f220b31b9"
+  },
+  {
+    "id": "4",
+    "voornaam": "Tycho",
+    "achternaam": "Blokdijk",
+    "woonplaats": "Ursem",
+    "geboortejaar": "2008",
+    "email": "tychoblokdijk@gmail.com",
+    "status": "Chopped",
+    "foto": "https://media.tenor.com/MgEFDkpigeIAAAAe/download-buff-simon-forfreerightnow.png"
+  },
+  {
+    "id": "5",
+    "voornaam": "Adam",
+    "achternaam": "Van Ederen",
+    "woonplaats": "Egmond",
+    "geboortejaar": "2006",
+    "email": "adamvanederen@gmail.com",
+    "status": "unemployed",
+    "foto": "https://i.ytimg.com/vi/eeB2LzzNWyA/maxresdefault.jpg"
+  },
+  {
+    "id": "6",
+    "voornaam": "Charlie",
+    "achternaam": "Stefans",
+    "woonplaats": "Lelystad",
+    "geboortejaar": "2000",
+    "email": "charliestefans@gmail.com",
+    "status": "dood",
+    "foto": "https://cdn-img.zerozero.pt/img/planteis/new/93/39/8849339_charlie_stevens_20240525202501.jpg"
+  },
+  {
+    "id": "7",
+    "voornaam": "Bob",
+    "achternaam": "Van Ederen",
+    "woonplaats": "Brabant",
+    "geboortejaar": "2002",
+    "email": "bobvanederen@gmail.com",
+    "status": "unemployed",
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAV2qt-Ztd60B5midCkxGyVa-KfgNd0Pxow&s"
+  }
+]
