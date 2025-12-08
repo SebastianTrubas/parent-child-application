@@ -8,17 +8,20 @@ interface Student {
     geboortejaar: string
     email: string
     status: string
-    foto: string
+    fotos: string[]
 }
 
 const props = defineProps<{
-    student: Student
+    student: Student,
+    foto: string
 }>();
+
+
 </script>
 
 <template>
     <div class="image_student">
-        <img :src="props.student.foto" alt="Student photo" heigth="300px" width="300px" />
+        <img :src="props.foto" alt="Student photo" heigth="300px" width="300px" />
     </div>
     <table class="StudentInfoTable">
         <thead>

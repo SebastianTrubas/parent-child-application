@@ -1,72 +1,101 @@
 [
-  {
-    "id": "1",
-    "voornaam": "Sebastian",
-    "achternaam": "Trubas",
-    "woonplaats": "Hoorn",
-    "geboortejaar": "2007",
-    "email": "sebastiantrubas@gmail.com",
-    "status": "unemployed",
-    "foto": "https://i.ytimg.com/vi/zvDpxQv1Oqk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBavsPg98opLgVXtlKRIitd0Grwrw"
-  },
-  {
-    "id": "2",
-    "voornaam": "Jesse",
-    "achternaam": "Veerman",
-    "woonplaats": "Hoorn",
-    "geboortejaar": "2006",
-    "email": "jesseveerman@gmail.com",
-    "status": "unemployed",
-    "foto": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8a7e/live/fb818410-a5dd-11f0-8fc6-8d89d06fa925.jpg"
-  },
-  {
-    "id": "3",
-    "voornaam": "Jace",
-    "achternaam": "Dillon",
-    "woonplaats": "Heerhugowaard",
-    "geboortejaar": "2006",
-    "email": "jacedillon@gmail.com",
-    "status": "employed",
-    "foto": "https://external-preview.redd.it/ibCY8jESBY8hntp5LlCY4_JLzIQl8h5R3IuyBZcPNeA.jpg?width=1080&crop=smart&auto=webp&s=6ec72bdf09cc466d3ba827800247a55f220b31b9"
-  },
-  {
-    "id": "4",
-    "voornaam": "Tycho",
-    "achternaam": "Blokdijk",
-    "woonplaats": "Ursem",
-    "geboortejaar": "2008",
-    "email": "tychoblokdijk@gmail.com",
-    "status": "Chopped",
-    "foto": "https://media.tenor.com/MgEFDkpigeIAAAAe/download-buff-simon-forfreerightnow.png"
-  },
-  {
-    "id": "5",
-    "voornaam": "Adam",
-    "achternaam": "Van Ederen",
-    "woonplaats": "Egmond",
-    "geboortejaar": "2006",
-    "email": "adamvanederen@gmail.com",
-    "status": "unemployed",
-    "foto": "https://i.ytimg.com/vi/eeB2LzzNWyA/maxresdefault.jpg"
-  },
-  {
-    "id": "6",
-    "voornaam": "Charlie",
-    "achternaam": "Stefans",
-    "woonplaats": "Lelystad",
-    "geboortejaar": "2000",
-    "email": "charliestefans@gmail.com",
-    "status": "dood",
-    "foto": "https://cdn-img.zerozero.pt/img/planteis/new/93/39/8849339_charlie_stevens_20240525202501.jpg"
-  },
-  {
-    "id": "7",
-    "voornaam": "Bob",
-    "achternaam": "Van Ederen",
-    "woonplaats": "Brabant",
-    "geboortejaar": "2002",
-    "email": "bobvanederen@gmail.com",
-    "status": "unemployed",
-    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAV2qt-Ztd60B5midCkxGyVa-KfgNd0Pxow&s"
-  }
+    {
+        "id": "1",
+        "voornaam": "Sebastian",
+        "achternaam": "Trubas",
+        "woonplaats": "Hoorn",
+        "geboortejaar": "2007",
+        "email": "sebastiantrubas@gmail.com",
+        "status": "unemployed",
+        "fotos": [
+			"https://i.ytimg.com/vi/zvDpxQv1Oqk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBavsPg98opLgVXtlKRIitd0Grwrw",
+			"https://i.redd.it/w4duiabtld8z.png",
+			"https://wallpapers.com/images/hd/johnny-sins-pastel-filter-359stlklvh8c67zc.jpg",
+			"https://i.pinimg.com/originals/88/d4/bf/88d4bf2ac1f09fc3b2ed74373e01f9d9.jpg"
+			]
+    },
+    {
+        "id": "2",
+        "voornaam": "Jesse",
+        "achternaam": "Veerman",
+        "woonplaats": "Hoorn",
+        "geboortejaar": "2006",
+        "email": "jesseveerman@gmail.com",
+        "status": "unemployed",
+        "fotos": [
+			"https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8a7e/live/fb818410-a5dd-11f0-8fc6-8d89d06fa925.jpg",
+			"https://th.bing.com/th/id/R.2acf297fcb548a1e129d97caae3a8954?rik=A5oZ5QiQ1yQr7w&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f25800000%2f-Jar-Jar-jar-jar-binks-25899498-640-550.jpg&ehk=VRIbMsWlc901z9DbIUU9kGdP%2bi07byRD32rqZl6TX0M%3d&risl=&pid=ImgRaw&r=0",
+			"https://media1.tenor.com/m/wPDJuLG6-b4AAAAC/miyabi-miyabigoon.gif"
+			]
+    },
+    {
+        "id": "3",
+        "voornaam": "Jace",
+        "achternaam": "Dillon",
+        "woonplaats": "Heerhugowaard",
+        "geboortejaar": "2006",
+        "email": "jacedillon@gmail.com",
+        "status": "employed",
+        "fotos": [
+			"https://external-preview.redd.it/ibCY8jESBY8hntp5LlCY4_JLzIQl8h5R3IuyBZcPNeA.jpg?width=1080&crop=smart&auto=webp&s=6ec72bdf09cc466d3ba827800247a55f220b31b9",
+			"https://static.wikia.nocookie.net/7f630af4-85a7-444e-873b-6df8edaa5a96/scale-to-width/755",
+			"https://tse4.mm.bing.net/th/id/OIP.ygQNhMtVsZU-qDIpladaZgHaEi?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+			]
+    },		
+    {
+        "id": "4",
+        "voornaam": "Tycho",
+        "achternaam": "Blokdijk",
+        "woonplaats": "Ursem",
+        "geboortejaar": "2008",
+        "email": "tychoblokdijk@gmail.com",
+        "status": "Chopped",
+        "fotos": [
+			"https://media.tenor.com/MgEFDkpigeIAAAAe/download-buff-simon-forfreerightnow.png",
+			"https://m.media-amazon.com/images/S/pv-target-images/dbc6678fa878b18fce75e03488876bc17653cdc7a2ef0dd33541473e7527d884.jpg",
+			"https://tse4.mm.bing.net/th/id/OIP.PS-uF9Ov99g1snDfLR8sUQAAAA?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+			]
+    },
+    {
+        "id": "5",
+        "voornaam": "Adam",
+        "achternaam": "Van Ederen",
+        "woonplaats": "Egmond",
+        "geboortejaar": "2006",
+        "email": "adamvanederen@gmail.com",
+        "status": "unemployed",
+        "fotos": [
+			"https://i.ytimg.com/vi/eeB2LzzNWyA/maxresdefault.jpg",
+			"https://tse2.mm.bing.net/th/id/OIP.X4Vu5_LIS-bcUlUEKFSzFAHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+			"https://www.e-architect.com/wp-content/uploads/2023/02/shower-cubicles-small-bathroom-home-j020223-1.jpg"
+			]
+    },
+    {
+        "id": "6",
+        "voornaam": "Charlie",
+        "achternaam": "Stefans",
+        "woonplaats": "Lelystad",
+        "geboortejaar": "2000",
+        "email": "charliestefans@gmail.com",
+        "status": "dood",
+        "fotos": [
+			"https://cdn-img.zerozero.pt/img/planteis/new/93/39/8849339_charlie_stevens_20240525202501.jpg",
+			"https://i.ytimg.com/vi/_-4i0EEkPu4/maxresdefault.jpg",
+			"https://media.giphy.com/media/in6x2b5qyslsA/giphy.gif"
+			]
+    },
+    {
+        "id": "7",
+        "voornaam": "Bob",
+        "achternaam": "Van Ederen",
+        "woonplaats": "Brabant",
+        "geboortejaar": "2002",
+        "email": "bobvanederen@gmail.com",
+        "status": "unemployed",
+        "fotos": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAV2qt-Ztd60B5midCkxGyVa-KfgNd0Pxow&s",
+			"https://preview.redd.it/woopise-poopsie-v0-cj1uos550wvd1.jpeg?width=640&crop=smart&auto=webp&s=0689f05a5b66e55b165f4a624bacedd68487bd67",
+			"https://i.pinimg.com/originals/92/3a/4b/923a4b631eede14330be0793ecc7061d.jpg"
+			]
+    }
 ]
