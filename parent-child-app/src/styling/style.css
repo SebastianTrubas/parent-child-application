@@ -49,6 +49,9 @@ h3 {
     color: blueviolet;
 }
 
+button {
+    cursor: pointer;
+}
 .HomeButton {
     border: solid blueviolet 2px;
     border-radius: 10px;

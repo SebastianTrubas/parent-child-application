@@ -2,18 +2,12 @@
 import { students } from "./json-data/json-home";
 import TableHome from "./tables/table-home.vue";
 import ColorButton from "./buttons/button-lijsten.vue";
-
-let Theme = "";
+import { Theme } from "./styling/theme";
 
 function buttonclicked() {
-    Theme = Theme === "#262626" ? "White" : "#262626";
-    document.body.style.backgroundColor = Theme;
-
-    document.querySelectorAll('.ButtonLijst').forEach(btn => {
-        btn.style.backgroundColor = Theme;
-    });
+    Theme.value = Theme.value === "#262626" ? "White" : "#262626";
+    document.body.style.backgroundColor = Theme.value;
 }
-
 </script>
 <template>
     <h1>Studenten Lijst</h1>
