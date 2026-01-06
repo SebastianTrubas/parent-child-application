@@ -17,9 +17,9 @@ import { Theme } from "./styling/theme";
 import FotoButton from "./buttons/button-component.vue";
 
 const router = useRouter();
-const students = ref<Student[]>(GetStudentList());
-const currentStudent = ref<Student | null>(null)
-const currentIndex = ref(0)
+let students = ref<Student[]>(GetStudentList());
+let currentStudent = ref<Student | null>(null)
+let currentIndex = ref(0)
 
 function handleSelectStudent(student: Student) {
   currentStudent.value = student
@@ -36,7 +36,7 @@ function returnToHomePage() {
   currentStudent.value = null;
 }
 
-const currentFoto = computed(() => {
+let currentFoto = computed(() => {
   if (!currentStudent.value) return ''
   return currentStudent.value.fotos[currentIndex.value]
 })
@@ -54,12 +54,10 @@ function changeImage() {
     <ButtonComponent :buttonclicked='changeTheme' :type="'text'" :label="'Change Theme'">Change Theme</ButtonComponent>
     <FotoButton v-if="currentStudent != null" :buttonclicked="changeImage" type="text" label="Change Image" />
   </div>
-
   <!-- hier components activeren  -->
-  <TableHome v-if="currentStudent === null" :students="students" @select-student="handleSelectStudent"/>
+  <TableHome v-if="currentStudent === null" :students="students" @select-student="handleSelectStudent" />
 
   <template v-if="currentStudent != null">
-    <StudentInfo :student="currentStudent" :foto="currentFoto"/>
+    <StudentInfo :student="currentStudent" :foto="currentFoto" />
   </template>
 </template>
-
