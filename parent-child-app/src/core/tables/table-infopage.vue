@@ -1,26 +1,16 @@
 <script setup lang="ts">
 
-interface Student {
-    id: number
-    voornaam: string
-    achternaam: string
-    woonplaats: string
-    geboortejaar: string
-    email: string
-    status: string
-    fotos: string[]
-}
+import type { Student } from "../data-client/student-data-interface";
 
 const props = defineProps<{
     student: Student,
     foto: string
 }>();
-
-
 </script>
 
 <template>
-    <div class="image_student">
+
+    <div class="image-student">
         <img :src="props.foto" alt="Student photo" heigth="300px" width="300px" />
     </div>
     <table class="StudentInfoTable">

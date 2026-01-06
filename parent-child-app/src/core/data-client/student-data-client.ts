@@ -1,3 +1,10 @@
+export function GetStudentList() {
+    const stored = localStorage.getItem('students')
+    const students = stored ? JSON.parse(stored) : [];
+
+    return students;
+}
+
 export function getStudentById(studentId: string) {
     const stored = localStorage.getItem('students');
     const students = stored ? JSON.parse(stored) : [];
