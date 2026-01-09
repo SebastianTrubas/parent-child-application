@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { Student } from '../data-client/student-data-interface'
-import { Theme } from '../../styling/theme'
+import { Ref, inject } from 'vue'
+import { ThemeType } from '@/core/themes/themeType';
+
+let theme = inject<Ref<ThemeType>>('theme')
 
 const props = defineProps<{
   students: Student[]
@@ -32,7 +35,7 @@ function selectStudent(student: Student) {
         <td>{{ student.id }}</td>
 
         <td>
-          <button class="button-component" :style="{ backgroundColor: Theme }" @click="selectStudent(student)">
+          <button :class="['button-component', theme]"  @click="selectStudent(student)">
             {{ student.voornaam }}
           </button>
         </td>

@@ -1,25 +1,39 @@
 <script setup lang="ts">
 // Vue Stuff
-import { computed, ref } from "vue";
-import { useRouter } from 'vue-router';
+import { computed, ref, provide, watch } from "vue"
+import { useRouter } from 'vue-router'
 
 // Student Data
-import { GetStudentList } from "./core/data-client/student-data-client";
-import type { Student } from "./core/data-client/student-data-interface";
-import StudentInfo from './student-info.vue';
+import { GetStudentList } from "./core/data-client/student-data-client"
+import type { Student } from "./core/data-client/student-data-interface"
+import StudentInfo from './student-info.vue'
 
 // Components
-import TableHome from "./core/tables/table-home.vue";
+import TableHome from "./core/tables/table-home.vue"
 
 // Button Bar
-import ButtonComponent from "./buttons/button-component.vue";
-import { Theme } from "./styling/theme";
-import FotoButton from "./buttons/button-component.vue";
+import ButtonComponent from "./buttons/button-component.vue"
+import FotoButton from "./buttons/button-component.vue"
 
-const router = useRouter();
-let students = ref<Student[]>(GetStudentList());
+// Theme
+import { ThemeType } from "./core/themes/themeType"
+
+const router = useRouter()
+const students = ref<Student[]>(GetStudentList())
 let currentStudent = ref<Student | null>(null)
 let currentIndex = ref(0)
+let themeType = ref<ThemeType>(ThemeType.dark)
+
+provide('theme', themeType)
+
+watch(themeType, (newTheme, oldTheme) => {
+  if(oldTheme) {
+    document.body.classList.remove(oldTheme)
+  }
+  document.body.classList.add(newTheme)
+},
+  {immediate: true}
+);
 
 function handleSelectStudent(student: Student) {
   currentStudent.value = student
@@ -27,18 +41,18 @@ function handleSelectStudent(student: Student) {
 }
 
 function changeTheme() {
-  Theme.value = Theme.value === "#262626" ? "White" : "#262626";
-  document.body.style.backgroundColor = Theme.value;
+  themeType.value = themeType.value === ThemeType.dark
+  ? ThemeType.light : ThemeType.dark
 }
 
 function returnToHomePage() {
-  router.push('/home-page');
-  currentStudent.value = null;
+  router.push('/home-page')
+  currentStudent.value = null
 }
 
 let currentFoto = computed(() => {
   if (!currentStudent.value) return ''
-  return currentStudent.value.fotos[currentIndex.value]
+  return currentStudent.value.fotos[currentIndex.value] ?? ''
 })
 
 function changeImage() {

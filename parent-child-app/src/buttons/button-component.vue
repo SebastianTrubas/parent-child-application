@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { Theme } from "../styling/theme";
+import { Ref, inject } from 'vue'
+import { ThemeType } from '@/core/themes/themeType';
+
+let theme = inject<Ref<ThemeType>>('theme')
 const props = defineProps<{
     buttonclicked: () => void,
     label?: string,
@@ -7,8 +10,11 @@ const props = defineProps<{
 }>();
 </script>
 <template>
-    <button @click="props.buttonclicked" class="button-component" :class="props.type === 'image' ? 'no-border-button' : ''"
-    :style="{ backgroundColor: Theme }">
+    <button @click="props.buttonclicked" :class="[
+      'button-component',
+      theme,
+      props.type === 'image' ? 'no-border-button' : '']">
+
     <img v-if="props.type === 'image'" :src="props.label" class="home-button-image" />
     <span v-else>{{ props.label }}</span>
     </button>

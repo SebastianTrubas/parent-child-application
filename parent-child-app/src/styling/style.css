@@ -105,3 +105,13 @@ img {
     width:50px;
     height: 50px;
 }
+
+/* ----- Themes ---- */
+.light {
+  transition: 1000ms;
+  background-color: azure;
+}
+.dark {
+  transition: 500ms;
+  background-color: #262626;
+}
