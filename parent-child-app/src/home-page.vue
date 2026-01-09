@@ -64,7 +64,7 @@ function changeImage() {
   <!-- Display Button Bar -->
   <div class="button-bar">
     <ButtonComponent :buttonclicked="returnToHomePage" :type="'image'"
-      :label="'https://pbs.twimg.com/profile_images/1677014185870254090/1PlB5Whm_200x200.jpg'"></ButtonComponent>
+      :label="'https://pbs.twimg.com/profile_images/1677014185870254090/1PlB5Whm_200x200.jpg'" class="home-button"></ButtonComponent>
     <ButtonComponent :buttonclicked='changeTheme' :type="'text'" :label="'Change Theme'">Change Theme</ButtonComponent>
     <FotoButton v-if="currentStudent != null" :buttonclicked="changeImage" type="text" label="Change Image" />
   </div>
